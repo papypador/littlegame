@@ -1,0 +1,14 @@
+#conding: utf-8
+import random
+print("Bienvenue dans le juste prix : ")
+print("quelle est le juste prix ?")
+
+while True:
+    n = random.randint(0, 10)
+    x = int(input())
+    if n < x:
+        print("le prix que vous chercher est superieur")
+    if n > x:
+        print("le prix que vous chercher est inferieur")
+    if n == x:
+        print("bravos vous avez trouvez le bon prix")
