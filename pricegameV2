@@ -1,0 +1,30 @@
+#conding: utf-8
+import random
+print("Bienvenue dans le juste prix : ")
+print("Quelle dificulté voulez vous: 1(easy), 2(meduim), 3(hard)")
+chiffre = int(input())
+print
+easy = 10
+medium = 100
+hard = 1000
+if chiffre == 1:
+    result = easy
+elif chiffre == 2:
+    result = medium
+elif chiffre == 3:
+    result = hard
+else:
+    result = medium
+print("quelle est le juste prix entre 0 et", result, "?")
+
+while True:
+    n = random.randint(0, result)
+    x = int(input())
+    if n == x:
+        print("bravos vous avez trouvez le bon prix")
+    if n < x:
+        print("le prix que vous chercher est superieur")
+    if n > x:
+        print("le prix que vous chercher est inferieur")
+
+
