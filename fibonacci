@@ -1,0 +1,16 @@
+#coding: utf-8
+
+print("vous voici dans une suite de fibonacci")
+print("Combien de suite voulez vous ?")
+suite = int(input())
+print("choissez un chiffre premier ?")
+chiffre1 = int(input())
+print("choisissez le deusieme chiffre pour votre suite")
+chiffre2 = int(input())
+def fibonacci(n):
+    a, b = chiffre1, chiffre2
+    for i in range(n):
+        a, b = b, a + b
+        print(a)
+
+fibonacci(suite)  # Affiche les 10 premiers éléments de la suite
