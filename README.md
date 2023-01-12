@@ -1,2 +1,0 @@
-# pricegame
-pricegameV1
